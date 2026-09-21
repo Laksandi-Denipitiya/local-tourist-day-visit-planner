@@ -1,0 +1,164 @@
+body {
+    background: #f5f7f6;
+}
+
+.day-plan-page {
+    padding: 50px 0;
+}
+
+.day-plan-header {
+    background: linear-gradient(135deg, #198754, #146c43);
+    color: white;
+    padding: 55px 30px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.day-plan-header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.day-plan-header p {
+    font-size: 17px;
+    margin: 0;
+}
+
+.plan-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.plan-section-header h3 {
+    font-weight: 700;
+    margin: 0;
+}
+
+.plan-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: none;
+}
+
+.plan-card:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.plan-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.plan-card-body {
+    padding: 25px;
+}
+
+.stop-badge {
+    display: inline-block;
+    background: #198754;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.category-badge {
+    display: inline-block;
+    background: #e8f5ee;
+    color: #198754;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.plan-place-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 15px 0 10px;
+}
+
+.plan-description {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.plan-info {
+    color: #6c757d;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.plan-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    border-left: 1px solid #eeeeee;
+}
+
+.plan-action {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.empty-plan {
+    background: white;
+    text-align: center;
+    padding: 70px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.empty-plan i {
+    font-size: 60px;
+    color: #198754;
+}
+
+.empty-plan h3 {
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+
+    .day-plan-page {
+        padding: 30px 15px;
+    }
+
+    .day-plan-header {
+        padding: 40px 20px;
+    }
+
+    .day-plan-header h1 {
+        font-size: 30px;
+    }
+
+    .plan-image {
+        height: 220px;
+    }
+
+    .plan-actions {
+        border-left: none;
+        border-top: 1px solid #eeeeee;
+        flex-direction: row;
+    }
+
+    .plan-section-header {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+}
